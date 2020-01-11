@@ -1,0 +1,321 @@
+	@font-face{
+		font-family: nautilus;
+		src:url('./font/Nautilus.otf');
+	}
+#wrapper{
+	width: 1170px;
+	height: auto;
+	margin: 0 auto;
+}
+header{
+	width: 1170px;
+	height: 657px;
+	background-image: url("./images/anh_header.png");
+	/*position: relative;*/
+}
+header #lam_mo{
+	width: 1170px;
+	height: 657px;
+	z-index: 1;
+	opacity: 0.2;
+	display: inline;
+	background-color: black;
+	position: absolute;
+}
+header #wraper_header_text{
+	width: 1170px;
+	height: 657px;
+	z-index: 4;
+	display: inline;
+	color: #ffffff;
+	/*position: absolute;*/
+}
+header #mo_tren{
+	height: 35px;
+    width: 1170px;
+    z-index: 2;
+    background: linear-gradient(180deg, #211f1fa3, #00000000);
+    position: absolute;
+}
+header #tren{
+	height: 35px;
+	width: 1170px;
+	font-family: tahoma;
+	
+}
+header #tren p{
+    display: inline;
+    padding: 10px;
+    z-index: 6;
+    position: relative;
+}
+header #chon{
+	width: 46px;
+    height: 6px;
+    background-color: #54d154;
+    margin-left: 9px;
+    z-index: 6;
+    position: relative;
+}
+#tren #trai{
+	float: left;
+    width: 50%;
+    font-size: 16px;
+}
+#tren #giua{
+	float: left;
+	font-family: nautilus;
+	font-size: 26px;
+	z-index: 6;
+    position: relative;
+
+}
+#tren #phai {
+	float: right;
+    width: 300px;
+}
+#tren #phai input[type="text"] {
+	float: right;
+    width: 178px;
+    height: 27px;
+    margin-right: 31px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 13px;
+    color: #2e2e2e;
+    z-index: 5;
+    position: relative;
+}
+#tren #phai img{
+    width: 15px;
+    height: 15px;
+    float: right;
+    z-index: 6;
+    margin-left: 53px;
+    margin-top: 5px;
+    position: relative;
+    right: -170px;
+    cursor: pointer;
+}
+header #nd_giua{
+	position: absolute;
+    z-index: 2;
+    width: 1170px;
+    height: 131px;
+    text-align: center;
+    top: 245px;
+}
+header #nd_giua #tren{
+	    font-size: 50px;
+}
+header #nd_giua #duoi{
+    margin-top: 40px;
+    margin-left: 480px;
+    border: 1px solid #54d154;
+    border-radius: 24px;
+    width: 209px;
+    font-size: 25px;
+    background-color: #54d154;
+    padding: 10px;
+}
+header #nd_duoi{
+	position: absolute;
+    z-index: 2;
+    top: 615px;
+    width: 122px;
+    height: 28px;
+    border: 1px solid white;
+    border-radius: 15px;
+    background: white;
+    margin-left: 526px;
+    opacity: 0.7;
+}
+header #nd_duoi p{
+	float: left;
+    color: black;
+    opacity: 1;
+    font-size: 18px;
+    padding-left: 8px;
+    padding-top: 3px;
+}
+header #nd_duoi img{
+	margin-top: 6px;
+    margin-left: 6px;
+    width: 14px;
+}
+
+
+#content1{
+    width: 1170px;
+    height: 577px;
+    background-color: white;
+}
+#content1 #tren{
+    margin-top: 44px;
+    text-align: center;
+    color: #828181;
+}
+#content1 #tren #p1{
+    font-size: 30px
+}
+#content1 #tren hr{
+    width: 45px
+}
+#content1 #tren #p2{
+    opacity: 0.5;
+}
+#content1 #duoi{
+    margin-top: 80px;
+
+} 
+#content1 #duoi .nd{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content1 #duoi #trai{
+    width: 395px;
+    float: left;
+}
+#content1 #duoi #giua{
+    width: 380px;
+    float: left;
+}
+#content1 #duoi #phai{
+    width: 395px;
+    float: left;
+}
+#content1 #duoi .dan_cach{
+    margin-bottom: 28px;
+}
+#content1 #duoi img.img_inner {
+    margin-bottom: -3px;
+}
+#content1 #duoi .anh{
+    width: 145px;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1f3e1;
+    border: 1px solid #e1f3e1;
+    border-radius: 30px;
+}
+#content1 #duoi .p1{
+    font-size: 20px;
+    font-weight: bold;
+}
+#content1 #duoi .p2{
+    width: 250px;
+    text-align: center;
+}
+#content1 #duoi .p3{
+    background-color: #54d154;
+    border: 7px solid #54d154;
+    padding: 0 15px;
+    border-radius: 22px;
+    color: white;
+}
+
+
+#content2{
+    height: 748px;
+    width: inherit;
+    background-color: #54d154;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content2 #nd1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content2 #nd1 p:nth-child(1){
+    padding-top: 45px;
+    font-size: 20px;
+    color: #207b20;
+}
+#content2 #thuoc{
+    margin-top: 15px;
+    width: 45px;
+    height: 3px;
+    background-color: #207b20;
+}
+#content2 #nd1 p:nth-child(3){
+    margin-top: 15px;
+    color: #207b20;
+    opacity: 0.7;
+}
+#content2 #tab{
+    margin-top: 63px;
+    width: 280px;
+    height: 35px;
+    border: 1px solid #2b9b2b;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+#content2 #tab div:nth-child(1){
+    color: white;
+    
+    background-color: #2b9b2b;
+    overflow: hidden;
+    width: 190px;
+    height: 33px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#content2 #tab div:nth-child(2){
+    border-right: 1px solid #2b9b2b;
+    color: #43a343;
+    background-color: white;
+     width: 121px;
+    height: 33px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#content2 #tab div:nth-child(3){
+    color: #43a343;
+    background-color: white;
+     width: 121px;
+    height: 33px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#content2 #anh{
+    margin-top: 57px;
+    width: 920px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+  
+}
+#content2 #anh #img:first-line {
+    padding-bottom: 4px;
+}
+#content2 #duoi{
+    background-color: #2b9b2b;
+    width: 190px;
+    height: 42px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+    color: white;
+    font-family: tahoma;
+    border-radius: 22px;
+    align-items: center;
+}
+#content2 #duoi img{
+    margin-left: -37px;
+    width: 20px;
+}
