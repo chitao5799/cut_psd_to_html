@@ -1,3 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
 	@font-face{
 		font-family: nautilus;
 		src:url('./font/Nautilus.otf');
@@ -43,24 +51,42 @@ header #tren{
 	font-family: tahoma;
 	
 }
-header #tren p{
+/*header #tren p{
+    display: inline;
+    padding: 10px;
+    z-index: 6;
+    position: relative;
+}*/
+header #tren #trai div{
     display: inline;
     padding: 10px;
     z-index: 6;
     position: relative;
 }
-header #chon{
+header #tren #trai div a{
+    text-decoration: none;
+    color: white;
+}
+header #tren #trai div a:hover{
+    /*text-decoration: overline;*/
+    border-top:  5px solid #54d154;
+    cursor: pointer;
+    /*padding-top: 0px;*/
+    font-weight:bold;
+}
+/*header #chon{
 	width: 46px;
     height: 6px;
     background-color: #54d154;
     margin-left: 9px;
     z-index: 6;
     position: relative;
-}
+}*/
 #tren #trai{
 	float: left;
     width: 50%;
     font-size: 16px;
+    margin-top: 8px;
 }
 #tren #giua{
 	float: left;
@@ -96,7 +122,7 @@ header #chon{
     margin-left: 53px;
     margin-top: 5px;
     position: relative;
-    right: -170px;
+    left:170px;
     cursor: pointer;
 }
 header #nd_giua{
@@ -158,10 +184,13 @@ header #nd_duoi img{
     color: #828181;
 }
 #content1 #tren #p1{
-    font-size: 30px
+    font-size: 30px;
 }
 #content1 #tren hr{
-    width: 45px
+    width: 45px;
+    margin-left: 560px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 #content1 #tren #p2{
     opacity: 0.5;
@@ -260,13 +289,16 @@ header #nd_duoi img{
     align-items: center;
     overflow: hidden;
 }
+#content2 div#tab div:hover {
+    background-color: #12ef128c!important;
+}
 #content2 #tab div:nth-child(1){
     color: white;
     
     background-color: #2b9b2b;
     overflow: hidden;
     width: 190px;
-    height: 33px;
+    height: 35px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -276,7 +308,7 @@ header #nd_duoi img{
     color: #43a343;
     background-color: white;
      width: 121px;
-    height: 33px;
+    height: 35px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -285,7 +317,7 @@ header #nd_duoi img{
     color: #43a343;
     background-color: white;
      width: 121px;
-    height: 33px;
+    height: 35px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -317,7 +349,7 @@ header #nd_duoi img{
     align-items: center;
 }
 .content_duoi img{
-    margin-left: -37px;
+    margin-left: -25px;
     width: 20px;
 }
 
@@ -623,7 +655,7 @@ hr.hr_ngang {
     background-color: #444444;
     margin-bottom: 30px;
     width: 325px;
-    height: 232px;
+    height: 220px;
 }
 #phai6 form .mauden{
     background-color: #444444;
