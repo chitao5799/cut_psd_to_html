@@ -86,11 +86,13 @@ header #tren #trai div a:hover{
     font-size: 26px;
     z-index: 6;
     position: relative;
+    margin-top: 6px;
 
 }
 #tren #phai {
     float: right;
     width: 300px;
+    margin-top: 6px;
 }
 #tren #phai input[type="text"] {
     float: right;
@@ -121,9 +123,9 @@ header #nd_giua{
     position: absolute;
     z-index: 2;
     width: 1170px;
-    height: 131px;
+    /* height: 131px; */
     text-align: center;
-    top: 245px;
+    top: 265px;
 }
 header #nd_giua #tren{
         font-size: 50px;

@@ -89,6 +89,7 @@ header #tren #trai div a:hover{
 #tren #phai {
 	float: right;
     width: 300px;
+    margin-top:6px;
 }
 #tren #phai input[type="text"] {
 	float: right;
@@ -119,9 +120,9 @@ header #nd_giua{
 	position: absolute;
     z-index: 2;
     width: 1170px;
-    height: 131px;
+    /* height: 131px; */
     text-align: center;
-    top: 245px;
+    top: 265px;
 }
 header #nd_giua #tren{
 	    font-size: 50px;
@@ -256,9 +257,7 @@ header #nd_duoi img{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
+    
 }
 #content2 #nd1{
     display: grid;
@@ -370,15 +369,16 @@ header #nd_duoi img{
     background-color: white;
    display: grid;
    grid-template-columns: 1fr;
-   grid-template-rows: repeat(3,1fr);
+   grid-template-rows: 94px 125px 125px;
 }
 /*#content3 #tren*/ 
 .content_tren{
     justify-self: center;
-     margin-top: 40px;
+    text-align: center;
+     margin-top: 34px;
      height: 55px;
      width: auto;
-     display: flex;
+    
     display: grid;
     grid-row-gap: 10px;
 }
@@ -386,21 +386,28 @@ header #nd_duoi img{
    
     letter-spacing: 7px;
     color: #828181;
-    font-size: 25px;
+    font-size:16px;
 }
 .content_tren p:nth-child(3){
     color: #b7b3b3;
-    font-size: 20px;
+    font-size: 18px;
 }
 hr.hr_ngang {
-    width: 45px;
+    width: 44px;
     background-color: #828181;
-    height: 3px;
+    height: 1px;
+    justify-self: center;
 }
 #content3 #giua3 {
+    padding-bottom: -41px;
     width: 800px;
     height: auto;
     justify-self: center;
+    align-self: end!important;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    align-content: s;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
@@ -414,35 +421,42 @@ hr.hr_ngang {
 #content3 #giua3 p::first-line{
     width: 340px;
 }
-#content3 #giua3 img:nth-child(1){
+#content3 #giua3 a:nth-child(1) img:nth-child(1){
     height: 25px;
 }
-#content3 #giua3 img:nth-child(3){
+#content3 #giua3 a:nth-child(3){
+    display: grid;
+}
+#content3 #giua3 a:nth-child(3) img:nth-child(1){
     height: 25px;
+    justify-self: end;
 }
 #content3 #duoi3 {
     width: 188px;
     height: auto;
     justify-self: center;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    margin-bottom: 60px;
+    grid-template-columns: 48px 136px;
+    grid-column-gap: 8px;
+    margin-top: 20px;
 }
 #content3 #duoi3 #border_img{
     border: 3px solid #e1e1e1;
     border-radius: 25px;
-    width: 50px;
-    height: 50px;
-    justify-self: center;
+    width: 40px;
+    height: 40px;
+    display: grid;
 }
 #content3 #duoi3 p:nth-child(1){
     color: #686868;
     font-size: 20px;
-    margin-bottom: 7px;
+    /* margin-bottom: 7px; */
     margin-top: 3px;
 }
 #content3 #duoi3 img{
-    width: 30px;
+    width: 27px;
+    align-self: center;
+    justify-self: center;
 } 
 
 
@@ -462,18 +476,17 @@ hr.hr_ngang {
     font-size: 17px;
 }
 #content4 #anh4{
-    margin-top: 70px;
+    
     width: 880px;
     height: 200px;
     display: grid;
+    justify-self: center;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);
-    justify-content: space-between;
-    align-content: space-between;
 }
 #content4 #anh4 img{
     margin: 18px 60px;
-    width: 70px;
+    width: 90px;
 }
 #content4 #duoi4{
     margin-bottom: 62px;
@@ -498,6 +511,10 @@ hr.hr_ngang {
     justify-self: center;
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    align-content: space-between;
+}
+#content5 #tren5 div {
+    justify-self: center;
 }
 #giua5 .nd{
     height: 278px;
@@ -508,8 +525,8 @@ hr.hr_ngang {
     grid-template-rows: repeat(4,1fr);
 }
 #giua5 .anh{
-    width: 130px;
-    height: 130px;
+    width: 125px;
+    height: 125px;
     border-radius: 65px;
     background-color: white;
     text-align: center;
@@ -523,14 +540,18 @@ hr.hr_ngang {
     height: 77px;
     width: 2px;
     background-color: #207b20;
+    justify-self: center;
+    margin-top: 10px;
 }
 #giua5 p{
     color: white;
     font-size: 15px;
+    justify-self: center;
+    margin-top: 10px;
 }
  .media{
     width: 85px;
-    height: 32px;
+    height: 30px;
     background-color: white;
     opacity: 0.7;
     justify-self: center;
@@ -538,6 +559,12 @@ hr.hr_ngang {
     grid-template-columns: repeat(3,1fr);
     overflow: hidden;
     border-radius: 17px;
+    grid-row: end;
+}
+.media a {
+    justify-self: center;
+    margin-top: 5px;
+    /* align-self: center; */
 }
  .media img{
     width: 20px;
@@ -552,6 +579,7 @@ hr.hr_ngang {
     display: grid;
     justify-content: space-around;
     align-content: space-around;
+    align-self: end;
 }
 #duoi5 div{
     width: 175px;
@@ -565,6 +593,7 @@ hr.hr_ngang {
     display: grid;
     justify-content: space-around;
     align-content: space-around;
+    box-shadow: -3px 5px 5px #0000001f;
 }
 
 
@@ -580,7 +609,7 @@ hr.hr_ngang {
    align-content: space-between;
 }
 .common6{
-    width: 33%;
+   
     height: inherit;
     display: grid;
     grid-template-rows: repeat(2,1fr);
@@ -597,18 +626,24 @@ hr.hr_ngang {
     letter-spacing: 3px;
 }
 .thuoc6{
-        width: 32px;
+    width: 32px;
     height: 2px;
     background: #dddddd;
+    justify-self: center;
+    margin-top: 3px;
 }
 #content6 #doanvan{
     width: 320px;
     height: auto;
     text-align: center;
     color: #bdbdbd;
+    justify-self: center;
+    margin-top: -88px;
+    margin-top: -37px;
+    
 }
 #content6 .media {
-    margin-bottom: 82px;
+    margin-bottom: 80px;
 }
 #nd6{
     width: 288px;
@@ -618,6 +653,7 @@ hr.hr_ngang {
     justify-content: space-between;
     align-content: space-between;
     padding-bottom: 20px;
+    justify-self: center;
 }
 .ndCon{
     width: inherit;
@@ -632,40 +668,52 @@ hr.hr_ngang {
     height: 55px;
 }
 .ndCon .text{
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
-    align-content: space-around;
+    margin-top: 3px;
 }
 .ndCon .text p:nth-child(1){
     color: #cccccc;
     font-size: 18px;
 }
 .ndCon .text p:nth-child(2){
-    width: 68px;
+    margin-top: 5px;
+    width: fit-content;
     font-size: 10px;
+    letter-spacing: 1px;
     margin-bottom: 5px;
     padding: 5px 10px;
     background-color: #54d154;
     border-radius: 3px;
     color: white;
 }
+div#phai6,div#trai6 {
+    display: grid;
+    grid-template-rows: auto;
+    align-content: space-between;
+}
 #phai6 #contact{
+    margin-top: -15px;
+    font-size: 14px;
     width: 204px;
     height: auto;
     color: #aeaeae;
     text-align: center;
+    justify-self: center;
 }
 #phai6 .form{
     border-radius: 5px;
     background-color: #444444;
     margin-bottom: 30px;
     width: 325px;
-    height: 220px;
+    /* height: 220px; */
+    justify-self: center;
+    overflow: hidden;
 }
 #phai6 form .mauden{
     background-color: #444444;
-    border-color: #444444;
-    width: 325px;
+    border: none;
+    border-bottom: 2px solid #333333!important;
+    padding: 12px 12px 12px 15px;
+    width: 298px;
     color: white;
 }
 #phai6 form input[type="submit"]{
@@ -673,15 +721,16 @@ hr.hr_ngang {
     background-color: #2b9b2b;
     width: 325px;
     height: 32px;
-    border-color: #2b9b2b;
+    border: none;
+    margin-top: -4px;
+    cursor: pointer;
 }
 
 
 footer{
     background-color: #333333;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-rows: repeat(2,auto);
 }
 footer #noidung{
     width: inherit;
@@ -698,8 +747,8 @@ footer #noidung .tren6{
 
 }
 footer #anh{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
     justify-content: space-around;
     margin-top: 20px;
 }
@@ -708,7 +757,7 @@ footer #anh img{
     height: 45px;
 }
 footer #day{
-    background-color: black;
+    background-color:#111111;
     color: white;
     text-align: center;
     height: 35px;
