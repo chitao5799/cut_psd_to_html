@@ -1,90 +1,134 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
-	@font-face{
-		font-family: nautilus;
-		src:url('./font/Nautilus.otf');
-	}
-#wrapper{
-	width: 1170px;
-	height: auto;
-	margin: 0 auto;
+
+@font-face {
+    font-family: nautilus;
+    src: url('./font/Nautilus.otf');
 }
-header{
-	width: 1170px;
-	height: 657px;
-	background-image: url("./images/anh_header.png");
+
+@font-face {
+    font-family: MontserratLight;
+    src: url('./font/MontserratLight.ttf');
 }
-header #lam_mo{
-	width: 1170px;
-	height: 657px;
-	z-index: 1;
-	opacity: 0.2;
-	display: inline;
-	background-color: black;
-	position: absolute;
+
+@font-face {
+    font-family: MontserratBold;
+    src: url('./font/MontserratBold.ttf');
 }
-header #wraper_header_text{
-	width: 1170px;
-	height: 657px;
-	z-index: 4;
-	display: inline;
-	color: #ffffff;
+
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url('./font/ProximaNovaRegular.ttf');
 }
-header #mo_tren{
-	height: 35px;
+
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url('./font/ProximaNovaBold.otf');
+}
+
+@font-face {
+    font-family: ProximaNovaLight;
+    src: url('./font/ProximaNovaLight.otf');
+}
+
+@font-face {
+    font-family: OpenSansLight;
+    src: url('./font/OpenSans-Light.ttf');
+}
+
+#wrapper {
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header {
+    width: 1170px;
+    height: 657px;
+    background-image: url("./images/anh_header.png");
+}
+
+header #lam_mo {
+    width: 1170px;
+    height: 657px;
+    z-index: 1;
+    opacity: 0.2;
+    display: inline;
+    background-color: black;
+    position: absolute;
+}
+
+header #wraper_header_text {
+    width: 1170px;
+    height: 657px;
+    z-index: 4;
+    display: inline;
+    color: #ffffff;
+}
+
+header #mo_tren {
+    height: 35px;
     width: 1170px;
     z-index: 2;
     background: linear-gradient(180deg, #211f1fa3, #00000000);
     position: absolute;
 }
-header #tren{
-	height: 35px;
-	width: 1170px;
-	font-family: tahoma;
-	
+
+header #tren {
+    height: 35px;
+    width: 1170px;
+    font-family: tahoma;
 }
-header #tren #trai div{
+
+header #tren #trai div {
     display: inline;
     padding: 10px;
     z-index: 6;
     position: relative;
 }
-header #tren #trai div a{
+
+header #tren #trai div a {
     text-decoration: none;
     color: white;
+    font-family: ProximaNovaRegular;
 }
-header #tren #trai div a:hover{
-    border-top:  5px solid #54d154;
+
+header #tren #trai div a:hover {
+    border-top: 5px solid #54d154;
     cursor: pointer;
-    font-weight:bold;
+    font-family: ProximaNovaBold;
 }
-#tren #trai{
-	float: left;
+
+#tren #trai {
+    float: left;
     width: 50%;
     font-size: 16px;
     margin-top: 8px;
 }
-#tren #giua{
-	float: left;
-	font-family: nautilus;
-	font-size: 26px;
-	z-index: 6;
-    position: relative;
 
+#tren #giua {
+    float: left;
+    font-family: nautilus;
+    font-size: 24px;
+    z-index: 6;
+    position: relative;
 }
+
 #tren #phai {
-	float: right;
+    float: right;
     width: 300px;
-    margin-top:6px;
+    margin-top: 6px;
 }
+
 #tren #phai input[type="text"] {
-	float: right;
+    float: right;
     width: 178px;
     height: 27px;
     margin-right: 31px;
@@ -95,9 +139,11 @@ header #tren #trai div a:hover{
     padding-left: 13px;
     color: #2e2e2e;
     z-index: 5;
+    font-size: 16px;
     position: relative;
 }
-#tren #phai img{
+
+#tren #phai img {
     width: 15px;
     height: 15px;
     float: right;
@@ -105,31 +151,35 @@ header #tren #trai div a:hover{
     margin-left: 53px;
     margin-top: 5px;
     position: relative;
-    left:170px;
+    left: 170px;
     cursor: pointer;
 }
-header #nd_giua{
-	position: absolute;
+
+header #nd_giua {
+    position: absolute;
     z-index: 2;
     width: 1170px;
     text-align: center;
     top: 265px;
 }
-header #nd_giua #tren{
-	    font-size: 50px;
+
+header #nd_giua #tren {
+    font-size: 55px;
 }
-header #nd_giua #duoi{
+
+header #nd_giua #duoi {
     margin-top: 40px;
     margin-left: 480px;
     border: 1px solid #54d154;
     border-radius: 24px;
     width: 209px;
-    font-size: 25px;
+    font-size: 21.89px;
     background-color: #54d154;
     padding: 10px;
 }
-header #nd_duoi{
-	position: absolute;
+
+header #nd_duoi {
+    position: absolute;
     z-index: 2;
     top: 615px;
     width: 122px;
@@ -140,93 +190,115 @@ header #nd_duoi{
     margin-left: 526px;
     opacity: 0.7;
 }
-header #nd_duoi p{
-	float: left;
+
+header #nd_duoi p {
+    float: left;
     color: black;
     opacity: 1;
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 8px;
-    padding-top: 3px;
+    padding-top: 5px;
 }
-header #nd_duoi img{
-	margin-top: 6px;
+
+header #nd_duoi img {
+    margin-top: 6px;
     margin-left: 6px;
     width: 14px;
 }
 
-
-#content1{
+#content1 {
     width: 1170px;
     height: 577px;
     background-color: white;
 }
-#content1 #tren{
+
+#content1 #tren {
     margin-top: 44px;
     text-align: center;
     color: #828181;
 }
-#content1 #tren #p1{
-    font-size: 30px;
+
+#content1 #tren #p1 {
+    font-size: 20.54px;
+    font-family: MontserratLight;
+    letter-spacing: 4px;
 }
-#content1 #tren hr{
+
+#content1 #tren hr {
     width: 45px;
     margin-left: 560px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-#content1 #tren #p2{
-    opacity: 0.5;
-}
-#content1 #duoi{
-    margin-top: 80px;
 
-} 
-#content1 #duoi .nd{
+#content1 #tren #p2 {
+    opacity: 0.5;
+    font-family: OpenSansLight;
+    font-size: 16px;
+}
+
+#content1 #duoi {
+    margin-top: 80px;
+}
+
+#content1 #duoi .nd {
     text-align: center;
-   
     width: 33.3%;
 }
-#content1 #duoi #trai{
+
+#content1 #duoi #trai {
     width: 395px;
     /* text-align: center; */
     float: left;
 }
-#content1 #duoi #giua{
+
+#content1 #duoi #giua {
     width: 380px;
     float: left;
 }
-#content1 #duoi #phai{
+
+#content1 #duoi #phai {
     width: 395px;
     float: left;
 }
-#content1 #duoi .dan_cach{
+
+#content1 #duoi .dan_cach {
     margin-bottom: 28px;
+    font-family: ProximaNovaBold;
+    font-size: 16px;
 }
+
 #content1 #duoi img.img_inner {
-   
     margin-top: 34px;
 }
-#content1 #duoi .anh{
+
+#content1 #duoi .anh {
     margin-left: 126px;
-    height: 142px;
-    width: 142px;
-   
+    height: 145px;
+    width: 145px;
     background-color: #e1f3e1;
     border: 1px solid #e1f3e1;
     border-radius: 30px;
-    
 }
-#content1 #duoi .p1{
-    font-size: 20px;
+
+#content1 #duoi .p1 {
+    font-size: 24px;
     font-weight: bold;
     /* text-align: center; */
-   
+    justify-self: center;
+    font-family: ProximaNovaBold;
+    color: #828181;
 }
-#content1 #duoi .p2{
-    width: 250px;
+
+#content1 #duoi .p2 {
+    width: 268px;
     margin-left: 72px;
+    font-size: 15px;
+    color: #807d7d;
+    font-family: MontserratLight;
 }
-#content1 #duoi .p3{
+
+#content1 #duoi .p3 {
     width: 105px;
     background-color: #54d154;
     border: 7px solid #54d154;
@@ -236,37 +308,45 @@ header #nd_duoi img{
     margin-left: 120px;
 }
 
-
-#content2{
+#content2 {
     height: 748px;
     width: inherit;
     background-color: #54d154;
     text-align: center;
 }
-#content2 #nd1{
+
+#content2 #nd1 {
     text-align: center;
 }
-#content2 #nd1 p:nth-child(1){
-    padding-top: 45px;
-    font-size: 20px;
+
+#content2 #nd1 p:nth-child(1) {
+    padding-top: 37px;
+    font-size: 20.54px;
     color: #207b20;
-    justify-self:center;
+    justify-self: center;
+    font-family: MontserratLight;
+    letter-spacing: 5px;
 }
-#content2 #thuoc{
+
+#content2 #thuoc {
     margin-left: 564px;
     margin-top: 15px;
     width: 45px;
     height: 3px;
     background-color: #207b20;
-
 }
-#content2 #nd1 p:nth-child(3){
-    margin-top: 15px;
+
+#content2 #nd1 p:nth-child(3) {
+    margin-top: 12px;
     color: #207b20;
     opacity: 0.7;
-     justify-self:center;
+    justify-self: center;
+    font-size: 15px;
+    /* font-family: OpenSansLight; */
+    font-family: MontserratLight;
 }
-#content2 #tab{
+
+#content2 #tab {
     margin-top: 63px;
     width: 280px;
     height: 35px;
@@ -275,57 +355,65 @@ header #nd_duoi img{
     justify-self: center;
     overflow: hidden;
     margin-left: 446px;
+    font-family: ProximaNovaRegular;
+    font-size: 16px;
 }
+
 #content2 div#tab div:hover {
     background-color: #12ef128c!important;
 }
-#content2 #tab div:nth-child(1){
+
+#content2 #tab div:nth-child(1) {
     color: white;
     float: left;
     background-color: #2b9b2b;
     overflow: hidden;
     padding-top: 8px;
     padding-bottom: 9px;
-    width: 33.3%;
-    
+    width: 120px;
 }
-#content2 #tab div a{
+
+#content2 #tab div a {
     justify-self: center;
     align-self: center;
-  
 }
-#content2 #tab div:nth-child(2){
+
+#content2 #tab div:nth-child(2) {
     border-right: 1px solid #2b9b2b;
     color: #43a343;
     background-color: white;
     float: left;
     padding: 9px 0px 8px 0px;
-    width: 33.3%;
+    width: 90px;
 }
-#content2 #tab div:nth-child(3){
+
+#content2 #tab div:nth-child(3) {
     color: #43a343;
     background-color: white;
     float: left;
-    width: 33%;
+    width: 69px;
     padding: 9px 0px 10px 0px;
 }
-#content2 #duoi a:nth-child(1){
+
+#content2 #duoi a:nth-child(1) {
     margin-left: 18px!important;
     float: left;
 }
-#content2 #anh{
+
+#content2 #anh {
     margin-top: 57px;
-  
     height: 350px;
 }
-#content2 #anh img{
+
+#content2 #anh img {
     margin: 0px 0px 32px 32px;
 }
+
 #content2 #anh #img:first-line {
     padding-bottom: 4px;
 }
 
-.content_duoi{
+.content_duoi {
     background-color: #2b9b2b;
     width: 190px;
     height: 42px;
@@ -334,56 +422,61 @@ header #nd_duoi img{
     font-family: tahoma;
     border-radius: 22px;
     margin-left: 492px;
-  
     font-size: 18px;
     margin-bottom: 53px;
 }
-.content_duoi a{
+
+.content_duoi a {
     float: left;
 }
-.content_duoi a:nth-child(1){
+
+.content_duoi a:nth-child(1) {
     float: left;
     margin-left: 32px;
     margin-top: 9px;
- 
+    font-family: ProximaNovaRegular;
+    font-size: 18px;
 }
-.content_duoi img{
 
+.content_duoi img {
     width: 20px;
     align-self: center;
 }
-#content2 #duoi img{
+
+#content2 #duoi img {
     /* margin: auto; */
     margin-left: 7px;
     margin-top: 12px;
 }
 
-#content3{
+#content3 {
     width: inherit;
     height: 342px;
     background-color: white;
 }
 
-.content_tren{
+.content_tren {
     justify-self: center;
     text-align: center;
-  
     padding-top: 34px;
     height: 55px;
     width: auto;
-  
 }
-.content_tren p:nth-child(1){
-   
-    letter-spacing: 7px;
+
+.content_tren p:nth-child(1) {
+    letter-spacing: 5px;
     color: #828181;
-    font-size:16px;
+    font-size: 20.54px;
+    font-family: MontserratLight;
 }
-.content_tren p:nth-child(3){
+
+.content_tren p:nth-child(3) {
     margin-top: 8px;
     color: #b7b3b3;
-    font-size: 18px;
+    font-size: 15px;
+    font-family: MontserratLight;
 }
+
 hr.hr_ngang {
     margin-left: 565px;
     margin-top: 8px;
@@ -392,6 +485,7 @@ hr.hr_ngang {
     height: 1px;
     justify-self: center;
 }
+
 #content3 #giua3 {
     padding-bottom: -41px;
     width: 800px;
@@ -399,129 +493,139 @@ hr.hr_ngang {
     margin-top: 75px;
     margin-left: 206px;
 }
-#content3 #giua3 p{
+
+#content3 #giua3 p {
     float: left;
     width: 485px;
     height: auto;
     text-align: center;
     color: #686868;
     margin-left: 122px;
+    font-family: ProximaNovaRegular;
+    font-size: 16px;
 }
-#content3 #giua3 p::first-line{
+
+#content3 #giua3 p::first-line {
     width: 340px;
 }
-#content3 #giua3 a:nth-child(1) img:nth-child(1){
+
+#content3 #giua3 a:nth-child(1) img:nth-child(1) {
     float: left;
     height: 25px;
 }
-#content3 #giua3 a:nth-child(3){
-  
+
+#content3 #giua3 a:nth-child(3) {
     float: left;
     margin-left: 122px;
 }
-#content3 #giua3 a:nth-child(3) img:nth-child(1){
+
+#content3 #giua3 a:nth-child(3) img:nth-child(1) {
     height: 25px;
     justify-self: end;
 }
+
 #content3 #duoi3 {
     width: 188px;
     height: auto;
     justify-self: center;
     margin-top: 148px;
     margin-left: 490px;
-   
 }
-#content3 #duoi3 #border_img{
+
+#content3 #duoi3 #border_img {
     border: 3px solid #e1e1e1;
     border-radius: 25px;
     width: 40px;
     height: 40px;
- 
     float: left;
     margin-right: 8px;
 }
-#content3 #duoi3 p:nth-child(1){
+
+#content3 #duoi3 p:nth-child(1) {
     color: #686868;
-    font-size: 20px;
+    font-size: 16px;
     /* margin-bottom: 7px; */
     margin-top: 3px;
+    font-family: ProximaNovaRegular;
 }
-#content3 #duoi3 img{
+
+#content3 #duoi3 img {
     width: 27px;
     margin-top: 3px;
     margin-left: 7px;
-} 
+}
 
-
-#content4{
+#content4 {
     height: 500px;
     width: inherit;
     background-color: #f2f1f1;
     /* text-align: center; */
 }
-#content4 #tren4 p:nth-child(1){
+
+#content4 #tren4 p:nth-child(1) {
     font-size: 16px;
     text-align: center;
 }
-#content4 #tren4 p:nth-child(3){
+
+#content4 #tren4 p:nth-child(3) {
     font-size: 17px;
 }
-#content4 #anh4{
-    
-width: 880px;
-    
-height: 200px;
-    
-margin-left: 150px;
-    
-margin-top: 41px;
+
+#content4 #anh4 {
+    width: 880px;
+    height: 200px;
+    margin-left: 150px;
+    margin-top: 41px;
 }
-#content4 #anh4 img{
+
+#content4 #anh4 img {
     margin: 18px 60px;
     width: 90px;
 }
-#content4 #duoi4{
+
+#content4 #duoi4 {
     margin-bottom: 62px;
     margin-top: 66px;
     color: #a59d9d;
     background-color: #dddcdc;
 }
-#content4 #duoi4 img{
+
+#content4 #duoi4 img {
     margin-top: 10px;
     margin-left: 20px;
 }
 
-
-#content5{
+#content5 {
     height: 576px;
     width: inherit;
     background-color: #54d154;
-  
 }
-#tren5 p:nth-child(1){
+
+#tren5 p:nth-child(1) {
     color: #207b20;
 }
-#giua5{
-    /* width: 825px; */
-    /* height: auto; */
+
+#giua5 {
+    width: 880px;
+    height: 284px;
     margin-left: 124px;
     /* margin: auto; */
     margin-top: 52px;
-
 }
+
 #content5 #tren5 div {
- 
     margin-left: 564px;
     margin-top: 8px;
 }
-#giua5 .nd{
+
+#giua5 .nd {
     height: 278px;
     width: 130px;
     float: left;
     margin-left: 46px;
-    
 }
-#giua5 .anh{
+
+#giua5 .anh {
     width: 125px;
     height: 125px;
     border-radius: 65px;
@@ -529,25 +633,30 @@ margin-top: 41px;
     text-align: center;
     overflow: hidden;
 }
-#giua5 .anh img{
+
+#giua5 .anh img {
     width: 100px;
     padding-top: 23px;
 }
-#giua5 .thuoc{
+
+#giua5 .thuoc {
     height: 77px;
     width: 2px;
     background-color: #207b20;
     margin-left: 65px;
     margin-top: 10px;
 }
-#giua5 p{
+
+#giua5 p {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     justify-self: center;
     text-align: center;
     margin-top: 10px;
+    font-family: ProximaNovaRegular;
 }
- .media{
+
+.media {
     width: 85px;
     height: 30px;
     background-color: white;
@@ -560,134 +669,160 @@ margin-top: 41px;
     border-radius: 17px;
     grid-row: end;
 }
-.media a {
-}
- .media img{
+
+.media a {}
+
+.media img {
     width: 20px;
     justify-self: center;
     align-self: center;
     margin-top: 4px;
 }
-#duoi5{
+
+#duoi5 {
     width: inherit;
     height: 92px;
     background-color: #3eba3e;
-    margin-top: 395px;
+    position: absolute;
+    margin-top: 45px;
     /* margin-bottom: 0px!important; */
     /* padding-bottom: 0px!important; */
 }
-#duoi5 div{
+
+#duoi5 div {
     width: 175px;
     height: 40px;
-
     color: white;
     /* align-content: center; */
     /* margin-left: 498px; */
     /* margin-top: 47px; */
     /* margin-bottom: -29px; */
-    font-size: 20px;
+    font-size: 18.63px;
     background-color: #54d154;
     border-radius: 20px;
     margin: auto;
+    margin-top: 26px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* top: 384px; */
     box-shadow: -3px 5px 5px #0000001f;
 }
-#duoi5 div a{
+
+#duoi5 div a {
     /* margin: auto; */
-    margin-top: 5px;
+    margin-top: 12px;
+    margin-left: 23px;
+    /* padding: 20px 4px; */
+    position: absolute;
 }
 
-
-#content6{
+#content6 {
     background-color: #333333;
     width: inherit;
-   
     height: 440px;
 }
-.common6{
-   
-height: inherit;
-   
-width: 33.3%;
-   
-float: left;
-   
-text-align: center;
+
+.common6 {
+    height: inherit;
+    width: 33.3%;
+    float: left;
+    text-align: center;
 }
-.tren6{
+
+.tren6 {
     color: #dddddd;
     height: 25px;
     width: auto;
     display: block;
     margin-top: 30px;
     text-align: center;
+    font-family: MontserratLight;
     letter-spacing: 3px;
+    font-size: 16px;
 }
-.thuoc6{
+
+.thuoc6 {
     width: 32px;
     height: 2px;
     background: #dddddd;
     justify-self: center;
     margin-top: 3px!important;
     margin: auto;
-
 }
-#content6 #doanvan{
+
+#content6 #doanvan {
     width: 314px;
     height: auto;
     text-align: center;
     color: #bdbdbd;
     margin-top: 24px!important;
     margin: auto;
+    font-family: ProximaNovaRegular;
+    font-size: 16px;
 }
+
 #content6 .media {
     margin: auto;
     margin-top: 28px;
 }
-#nd6{
-    width: 288px;
+
+#nd6 {
+    width: 290px;
     margin: auto;
     margin-top: 18px;
 }
-.ndCon{
+
+.ndCon {
     width: inherit;
     height: 55px;
     margin-bottom: 12px;
-   
 }
-.ndCon img{
+
+.ndCon img {
     width: 55px;
     height: 55px;
 }
-.ndCon .text{
+
+.ndCon .text {
     margin-top: 3px;
 }
-.ndCon .anh{
+
+.ndCon .anh {
     float: left;
     margin-right: 7px;
 }
-.ndCon .text{
+
+.ndCon .text {
     float: left;
 }
-.ndCon .text p:nth-child(1){
+
+.ndCon .text p:nth-child(1) {
     color: #cccccc;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: MontserratLight;
 }
-.ndCon .text p:nth-child(2){
+
+.ndCon .text p:nth-child(2) {
     margin-top: 5px;
     width: fit-content;
-    font-size: 10px;
-    letter-spacing: 1px;
+    font-size: 12.6px;
+    /* letter-spacing: 1px; */
     margin-bottom: 5px;
     padding: 5px 10px;
     background-color: #54d154;
     border-radius: 3px;
     color: white;
+    font-family: MontserratLight;
+    padding: 2px 4px;
 }
-div#phai6,div#trai6 {
+
+div#phai6,
+div#trai6 {
     /* width: 33.3%; */
     /* float: left; */
 }
-#phai6 #contact{
+
+#phai6 #contact {
     margin-top: -15px;
     font-size: 14px;
     width: 204px;
@@ -697,18 +832,22 @@ div#phai6,div#trai6 {
     text-align: center;
     margin: auto;
     justify-self: center;
+    font-family: ProximaNovaLight;
 }
-#phai6 .form{
+
+#phai6 .form {
     border-radius: 5px;
     background-color: #444444;
-   
     width: 325px;
     /* height: 220px; */
     margin: auto;
     margin-top: 28px;
     overflow: hidden;
+    font-family: ProximaNovaRegular;
+    font-size: 16px;
 }
-#phai6 form .mauden{
+
+#phai6 form .mauden {
     background-color: #444444;
     border: none;
     border-bottom: 2px solid #333333!important;
@@ -716,7 +855,8 @@ div#phai6,div#trai6 {
     width: 298px;
     color: white;
 }
-#phai6 form input[type="submit"]{
+
+#phai6 form input[type="submit"] {
     color: white;
     background-color: #2b9b2b;
     width: 325px;
@@ -724,51 +864,59 @@ div#phai6,div#trai6 {
     border: none;
     margin-top: -4px;
     cursor: pointer;
+    font-family: ProximaNovaRegular;
+    font-size: 15px;
 }
 
-
-footer{
+footer {
     height: auto;
     width: inherit;
     background-color: #333333;
 }
-footer #noidung{
+
+footer #noidung {
     width: inherit;
     height: 150px;
 }
-footer #noidung #lam_mo{
+
+footer #noidung #lam_mo {
     position: absolute;
     background-color: black;
     width: 1170px;
     opacity: 0.5;
     height: 150px;
 }
-footer #noidung .tren6{
 
-margin-top: 0px;
-
-padding-top: 30px;
+footer #noidung .tren6 {
+    margin-top: 0px;
+    padding-top: 30px;
 }
-footer #anh{
+
+footer #anh {
     margin-top: 20px;
 }
-footer #anh img{
+
+footer #anh img {
     width: auto;
     height: 50px;
     margin-left: 135px;
     /* margin: auto; */
 }
-footer #day{
-    background-color:#111111;
+
+footer #day {
+    background-color: #111111;
     color: white;
     text-align: center;
     height: 35px;
+    font-family: ProximaNovaRegular;
 }
+
 footer #day p {
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 7px;
     /* margin-top: 7px; */
 }
-footer #day img{
+
+footer #day img {
     width: 23px;
 }

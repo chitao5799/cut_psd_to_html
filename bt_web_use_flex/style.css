@@ -1,7 +1,32 @@
-    @font-face{
-        font-family: nautilus;
-        src:url('./font/Nautilus.otf');
-    }
+
+@font-face{
+    font-family: nautilus;
+    src:url('./font/Nautilus.otf');
+}
+@font-face{
+    font-family: MontserratLight;
+    src:url('./font/MontserratLight.ttf');
+}
+@font-face{
+    font-family: MontserratBold;
+    src:url('./font/MontserratBold.ttf');
+}
+@font-face{
+    font-family: ProximaNovaRegular;
+    src:url('./font/ProximaNovaRegular.ttf');
+}
+@font-face{
+    font-family: ProximaNovaBold;
+    src:url('./font/ProximaNovaBold.otf');
+}
+@font-face{
+    font-family: ProximaNovaLight;
+    src:url('./font/ProximaNovaLight.otf');
+}
+@font-face{
+    font-family: OpenSansLight;
+    src:url('./font/OpenSans-Light.ttf');
+}
 #wrapper{
     width: 1170px;
     height: auto;
@@ -58,13 +83,13 @@ header #tren #trai div{
 header #tren #trai div a{
     text-decoration: none;
     color: white;
+    font-family: ProximaNovaRegular;
 }
 header #tren #trai div a:hover{
     /*text-decoration: overline;*/
     border-top:  5px solid #54d154;
     cursor: pointer;
-    /*padding-top: 0px;*/
-    font-weight:bold;
+    font-family: ProximaNovaBold;
 }
 /*header #chon{
     width: 46px;
@@ -83,11 +108,10 @@ header #tren #trai div a:hover{
 #tren #giua{
     float: left;
     font-family: nautilus;
-    font-size: 26px;
+    font-size: 24px;
     z-index: 6;
     position: relative;
     margin-top: 6px;
-
 }
 #tren #phai {
     float: right;
@@ -106,6 +130,7 @@ header #tren #trai div a:hover{
     padding-left: 13px;
     color: #2e2e2e;
     z-index: 5;
+    font-size: 16px;
     position: relative;
 }
 #tren #phai img{
@@ -128,7 +153,7 @@ header #nd_giua{
     top: 265px;
 }
 header #nd_giua #tren{
-        font-size: 50px;
+        font-size: 55px;
 }
 header #nd_giua #duoi{
     margin-top: 40px;
@@ -136,7 +161,7 @@ header #nd_giua #duoi{
     border: 1px solid #54d154;
     border-radius: 24px;
     width: 209px;
-    font-size: 25px;
+    font-size: 21.89px;
     background-color: #54d154;
     padding: 10px;
 }
@@ -156,9 +181,9 @@ header #nd_duoi p{
     float: left;
     color: black;
     opacity: 1;
-    font-size: 18px;
+    font-size: 16px;
     padding-left: 8px;
-    padding-top: 3px;
+    padding-top: 5px;
 }
 header #nd_duoi img{
     margin-top: 6px;
@@ -178,13 +203,17 @@ header #nd_duoi img{
     color: #828181;
 }
 #content1 #tren #p1{
-    font-size: 30px
+    font-size: 20.54px;
+    font-family: MontserratLight;
+    letter-spacing: 4px;
 }
 #content1 #tren hr{
     width: 45px
 }
 #content1 #tren #p2{
     opacity: 0.5;
+    font-family: OpenSansLight;
+    font-size: 16px;
 }
 #content1 #duoi{
     margin-top: 80px;
@@ -209,6 +238,8 @@ header #nd_duoi img{
 }
 #content1 #duoi .dan_cach{
     margin-bottom: 28px;
+    font-family: ProximaNovaBold;
+    font-size: 16px;
 }
 #content1 #duoi img.img_inner {
     margin-bottom: -3px;
@@ -224,12 +255,18 @@ header #nd_duoi img{
     border-radius: 30px;
 }
 #content1 #duoi .p1{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
+    justify-self: center;
+    font-family: ProximaNovaBold;
+    color: #828181;
 }
 #content1 #duoi .p2{
-    width: 250px;
+    width: 268px;
     text-align: center;
+    font-size: 15px;
+    color: #807d7d;
+    font-family: MontserratLight;
 }
 #content1 #duoi .p3{
     background-color: #54d154;
@@ -254,9 +291,11 @@ header #nd_duoi img{
     align-items: center;
 }
 #content2 #nd1 p:nth-child(1){
-    padding-top: 45px;
-    font-size: 20px;
+    padding-top: 37px;
+    font-size: 20.54px;
     color: #207b20;
+    font-family: MontserratLight;
+    letter-spacing: 5px;
 }
 #content2 #thuoc{
     margin-top: 15px;
@@ -265,9 +304,12 @@ header #nd_duoi img{
     background-color: #207b20;
 }
 #content2 #nd1 p:nth-child(3){
-    margin-top: 15px;
+     margin-top: 12px;
     color: #207b20;
     opacity: 0.7;
+    font-size: 15px;
+    /* font-family: OpenSansLight; */
+    font-family: MontserratLight;
 }
 #content2 #tab{
     margin-top: 63px;
@@ -285,7 +327,6 @@ header #nd_duoi img{
 }
 #content2 #tab div:nth-child(1){
     color: white;
-    
     background-color: #2b9b2b;
     overflow: hidden;
     width: 190px;
@@ -293,6 +334,8 @@ header #nd_duoi img{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 16px;
+    font-family: ProximaNovaRegular;
 }
 #content2 #tab div:nth-child(2){
     border-right: 1px solid #2b9b2b;
@@ -340,10 +383,16 @@ header #nd_duoi img{
     align-items: center;
 }
 .content_duoi img{
-    margin-left: -25px;
+    margin-left: -12px;
+    margin-top: 4px;
     width: 20px;
 }
-
+.content_duoi a:nth-child(1){
+   
+    font-family: ProximaNovaRegular;
+    font-size: 18px;
+    margin-right: -15px;
+}
 #content3{
     width: inherit;
     height: 342px;
@@ -367,13 +416,16 @@ header #nd_duoi img{
 }
 .content_tren p:nth-child(1){
    
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     color: #828181;
-    font-size: 25px;
+    font-size: 20.54px;
+   
+    font-family: MontserratLight;
 }
 .content_tren p:nth-child(3){
     color: #b7b3b3;
-    font-size: 20px;
+     font-size: 15px;
+    font-family: MontserratLight;
 }
 hr.hr_ngang {
     width: 45px;
@@ -394,6 +446,8 @@ hr.hr_ngang {
     height: auto;
     text-align: center;
     color: #686868;
+    font-family: ProximaNovaRegular;
+    font-size: 16px;
 }
 #content3 #giua3 p::first-line{
     width: 340px;
@@ -423,9 +477,11 @@ hr.hr_ngang {
 }
 #content3 #duoi3 p:nth-child(1){
     color: #686868;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 7px;
     margin-top: 3px;
+    font-family: ProximaNovaRegular;
+
 }
 #content3 #duoi3 img{
     width: 30px;
@@ -465,6 +521,7 @@ hr.hr_ngang {
     margin-bottom: 62px;
     color: #a59d9d;
     background-color: #dddcdc;
+    padding: 10px 0px;
 }
 
 #content5{
@@ -513,7 +570,8 @@ hr.hr_ngang {
 }
 #giua5 p{
     color: white;
-    font-size: 15px;
+    font-size: 16px;
+    font-family: ProximaNovaRegular;
 }
  .media{
     width: 85px;
@@ -544,12 +602,13 @@ hr.hr_ngang {
     height: 40px;
     color: white;
     align-content: center;
-    font-size: 20px;
+    font-size: 18.63px;
     background-color: #54d154;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: -3px 5px 5px #0000001f;
 }
 
 
@@ -580,7 +639,9 @@ hr.hr_ngang {
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+    font-family: MontserratLight;
     letter-spacing: 3px;
+    font-size: 16px;
 }
 .thuoc6{
         width: 32px;
@@ -592,6 +653,8 @@ hr.hr_ngang {
     height: auto;
     text-align: center;
     color: #bdbdbd;
+    font-family: ProximaNovaRegular;
+    font-size: 16px;
 }
 #content6 .media {
     margin-bottom: 82px;
@@ -624,15 +687,23 @@ hr.hr_ngang {
 }
 .ndCon .text p:nth-child(1){
     color: #cccccc;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: MontserratLight;
 }
 .ndCon .text p:nth-child(2){
-    width: 68px;
-    font-size: 10px;
-    margin-bottom: : 5px;
-    padding: 5px 10px;
-    background-color: #54d154;
-    border-radius: 3px;
+   margin-top: -6px;
+   width: fit-content;
+   font-size: 12.6px;
+   letter-spacing: 0px;
+   margin-bottom: 5px;
+   padding: 5px 10px;
+   background-color: #54d154;
+   border-radius: 3px;
+   color: white;
+   font-family: MontserratLight;
+   padding: 2px 4px;
+}
+.ndCon .text p:nth-child(2) a {
     color: white;
 }
 #phai6 #contact{
@@ -640,19 +711,28 @@ hr.hr_ngang {
     height: auto;
     color: #aeaeae;
     text-align: center;
+    font-family: ProximaNovaLight;
+    font-size: 14px;
+    margin-top: 15px;
 }
 #phai6 .form{
     border-radius: 5px;
     background-color: #444444;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin: auto;
     width: 325px;
-    height: 232px;
+    height: auto;
+    overflow: hidden;
+    font-family: ProximaNovaRegular;
+    font-size: 16px;
 }
 #phai6 form .mauden{
-    background-color: #444444;
-    border-color: #444444;
-    width: 325px;
-    color: white;
+   background-color: #444444;
+   border: none;
+   border-bottom: 2px solid #333333!important;
+   padding: 12px 12px 12px 15px;
+   width: 325px;
+   color: white;
 }
 #phai6 form input[type="submit"]{
     color: white;
@@ -660,6 +740,10 @@ hr.hr_ngang {
     width: 325px;
     height: 32px;
     border-color: #2b9b2b;
+    font-family: ProximaNovaRegular;
+    font-size: 15px;
+    border: 0px;
+    /* margin-top: 0px; */
 }
 
 
@@ -698,9 +782,10 @@ footer #day{
     color: white;
     text-align: center;
     height: 35px;
+    font-family: ProximaNovaRegular;
 }
 footer #day p {
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 7px;
 }
 footer #day img{
